@@ -64,7 +64,7 @@ https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
 |\S         |matches a single non-whitespace character (includes tabs and line breaks)|
 
-### To make special cgaractes literal add a backslash before them 
+### To make special charactes literal add a backslash before each special character
 #### Special Characters: ^.[$()|*+?{\
 
 |RegEx|Explanation|
