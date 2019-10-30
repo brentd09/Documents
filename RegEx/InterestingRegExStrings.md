@@ -58,7 +58,7 @@ https://www.regular-expressions.info/
 |\w         |matches a single word character (alphanumeric character plus underscore)|
 |\s         vmatches a single whitespace character (includes tabs and line breaks)|
 |.          |matches any character|
-|\D         |matches a single non-digit character -> Try it!|
+|\D         |matches a single non-digit character |
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
 |\S         |matches a single non-whitespace character (includes tabs and line breaks)|
 
