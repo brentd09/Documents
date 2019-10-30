@@ -7,7 +7,7 @@
 ```
 
 ### Match email addresses 
-####(Not sure if the trailing period is required for some FQ Email Addresses)
+#### (Not sure if the trailing period is required for some FQ Email Addresses)
 
 ```
 ^[a-z0-9][a-z0-9._\-$%^&*()#!~+=]+@([a-z0-9]+\.)+[a-z0-9]{2,3}\.?$
