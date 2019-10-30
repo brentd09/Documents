@@ -1,13 +1,12 @@
 # Good RegEx Urls
 
-```  
+
 [RegEx Tutorial](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285)
 [RegEx Cookbook](https://medium.com/factory-mind/regex-cookbook-most-wanted-regex-aa721558c3c1)
 [RegEx Testing Playpen](https://regex101.com)
 [RegEx Complete Guide](https://www.regular-expressions.info/)
 [RegEx CheetSheet](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/)
 
-```
 
 # Interesting RegEx Strings
 NB: I have developed these just to fill a need, if you have a better way to do these I would love to hear about it.
