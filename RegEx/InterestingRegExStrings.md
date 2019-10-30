@@ -20,3 +20,86 @@ https://www.regular-expressions.info/
 ```
 ^[a-z0-9][a-z0-9._\-$%^&*()#!~+=]+@([a-z0-9]+\.)+[a-z0-9]{2,3}\.?$
 ```
+
+
+
+Basic topics
+
+Anchors — ^ and $
+
+^The        matches any string that starts with, The 
+end$        matches a string that ends with, end
+^The end$   exact string match, The end (Starts with The and a space, then ends with end)
+roar        matches any string that has the text roar anywhere in it
+
+Quantifiers — * + ? and {}
+
+abc*        matches a string that has ab followed by zero or more c
+abc+        matches a string that has ab followed by one or more c
+abc?        matches a string that has ab followed by zero or one c
+abc{2}      matches a string that has ab followed by 2 c
+abc{2,}     matches a string that has ab followed by 2 or more c
+abc{2,5}    matches a string that has ab followed by 2,3,4 or 5 c
+a(bc)*      matches a string that has a followed by zero or more copies of the sequence bc
+a(bc){2,5}  matches a string that has a followed by 2 to 5 copies of the sequence bc
+
+OR operator — | or []
+
+a(b|c)     matches a string that has, a followed by b or c
+a[bc]      matches a string that has, a followed by b or c
+Character classes — \d \w \s and .
+\d         matches a single character that is a digit
+\w         matches a single word character (alphanumeric character plus underscore)
+\s         matches a single whitespace character (includes tabs and line breaks)
+.          matches any character
+\D         matches a single non-digit character -> Try it!
+\W         matches a single non-word character (alphanumeric character plus underscore)
+\S         matches a single non-whitespace character (includes tabs and line breaks)
+
+To make special cgaractes literal add a backslash before them 
+Special Characters: ^.[$()|*+?{\
+
+\$\d       matches a string that has a $ before one digit
+
+Non-printable characters: tab \t, new-lines \n, carriage returns \r.
+
+Flags
+
+g (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
+m (multi-line) when enabled ^ and $ will match the start and end of a line, instead of the whole string
+i (insensitive) makes the whole expression case-insensitive (for instance /aBc/i would match AbC)
+
+Intermediate topics
+
+Grouping and capturing — ()
+
+a(bc)           parentheses create a capturing group with value bc
+a(?:bc)*        using ?: we disable the capturing group -> Try it!
+a(?<foo>bc)     using ?<foo> we put a name to the group -> Try it!
+
+Bracket expressions — []
+
+[abc]            matches a string that has either an a or a b or a c -> is the same as a|b|c
+[a-c]            matches a string that has either an a or a b or a c -> is the same as a|b|c
+[a-fA-F0-9]      a string that represents a single hexadecimal digit, case insensitively
+[0-9]%           a string that has a character from 0 to 9 before a % sign
+[^a-zA-Z]        a string that has not a letter from a to z or from A to Z. In this case the ^ is used as negation of the expression
+
+Inside bracket expressions all special characters lose their special character status: thus we will not apply the “escape rule”.
+
+## Greedy and Lazy match
+
+### * + {} are greedy operators.
+|---|---|
+|RegEx|Explanation|
+|---|---|
+| <.+?> |            matches any character one or more times included inside < and >, expanding as needed |
+| <[^<>]+> |        matches any character except < or > one or more times included inside < and > |
+|---|---|
+
+Advanced topics
+
+Boundaries — \b and \B
+
+\babc\b          performs a "whole words only" search
+\Babc\B          matches only if the pattern is fully surrounded by word characters
