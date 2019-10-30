@@ -2,9 +2,11 @@
 
 ```  
 https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285
+https://medium.com/factory-mind/regex-cookbook-most-wanted-regex-aa721558c3c1
 https://regex101.com
 https://www.regular-expressions.info/  
 https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
+
 ```
 
 # Interesting RegEx Strings
