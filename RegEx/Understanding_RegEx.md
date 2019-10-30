@@ -36,10 +36,10 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 ### Anchors — ^ and $
 |RegEx|Explanation|
 |---|---|
-|^first       | matches any string that starts with, first |
-|last$       | matches a string that ends with, last|
-|^first last$  | exact string match, The end (Starts with first and a space, then ends with last)|
-|computer       | matches any string that has the text computer anywhere in it|
+|^first       | matches any string that starts with, "first" |
+|last$       | matches a string that ends with, "last"|
+|^first last$  | exact string match, "first last" (Starts with first and a space, then ends with last)|
+|computer       | matches any string that has the text "computer" anywhere in it|
 
 ### Quantifiers — * + ? and {}
 
