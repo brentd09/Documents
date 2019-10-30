@@ -90,12 +90,12 @@ Inside bracket expressions all special characters lose their special character s
 ## Greedy and Lazy match
 
 ### * + {} are greedy operators.
-|---|---|
+
 |RegEx|Explanation|
 |---|---|
 | <.+?> |            matches any character one or more times included inside < and >, expanding as needed |
 | <[^<>]+> |        matches any character except < or > one or more times included inside < and > |
-|---|---|
+
 
 Advanced topics
 
