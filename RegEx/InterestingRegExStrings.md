@@ -21,7 +21,8 @@ https://www.regular-expressions.info/
 ^[a-z0-9][a-z0-9._\-$%^&*()#!~+=]+@([a-z0-9]+\.)+[a-z0-9]{2,3}\.?$
 ```
 
-
+<BR>
+# RegEx Syntax
 
 ## Basic topics
 
@@ -84,18 +85,20 @@ https://www.regular-expressions.info/
 |RegEx|Explanation|
 |---|---|
 |a(bc)       |    parentheses create a capturing group with value bc|
-|a(?:bc)*    |    using ?: we disable the capturing group -> Try it!|
-|a(?<foo>bc) |    using ?<foo> we put a name to the group -> Try it!|
+|a(?:bc)*    |    using ?: we disable the capturing group|
+|a(?<foo>bc) |    using ?<foo> we put a name to the group |
 
-Bracket expressions — []
+### Bracket expressions — []
 
-[abc]            matches a string that has either an a or a b or a c -> is the same as a|b|c
-[a-c]            matches a string that has either an a or a b or a c -> is the same as a|b|c
-[a-fA-F0-9]      a string that represents a single hexadecimal digit, case insensitively
-[0-9]%           a string that has a character from 0 to 9 before a % sign
-[^a-zA-Z]        a string that has not a letter from a to z or from A to Z. In this case the ^ is used as negation of the expression
+|RegEx|Explanation|
+|---|---|
+|[abc]          |  matches a string that has either an a or a b or a c -> is the same as a\|b\|c| 
+|[a-c]          |  matches a string that has either an a or a b or a c -> is the same as a\|b\|c|
+|[a-fA-F0-9]    |  a string that represents a single hexadecimal digit, case insensitively|
+|[0-9]%         |  a string that has a character from 0 to 9 before a % sign|
+|[^a-zA-Z]      |  a string that has not a letter from a to z or from A to Z. In this case the ^ is used as negation of the expression|
 
-Inside bracket expressions all special characters lose their special character status: thus we will not apply the “escape rule”.
+### Inside bracket expressions all special characters lose their special character status: thus we will not apply the “escape rule”.
 
 ## Greedy and Lazy match
 
@@ -106,10 +109,39 @@ Inside bracket expressions all special characters lose their special character s
 | <.+?> |            matches any character one or more times included inside < and >, expanding as needed |
 | <[^<>]+> |        matches any character except < or > one or more times included inside < and > |
 
+## Advanced topics
 
-Advanced topics
+### Boundaries — \b and \B
 
-Boundaries — \b and \B
+|RegEx|Explanation|
+|---|---|
+|\babc\b        |  performs a "whole words only" search|
+|\Babc\B       |   matches only if the pattern is fully surrounded by word characters|
 
-\babc\b          performs a "whole words only" search
-\Babc\B          matches only if the pattern is fully surrounded by word characters
+### Back-references — \1
+
+|RegEx|Explanation|
+|---|---|
+|([abc])\1           |   using \1 it matches the same text that was matched by the first capturing group |
+|([abc])([de])\2\1   |   we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) |
+
+
+### Capturing group
+
+|RegEx|Explanation|
+|---|---|
+|(?<foo>[abc])\k<foo> |  we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex|
+
+### Look-ahead and Look-behind — (?=) and (?<=)
+
+|RegEx|Explanation|
+|---|---|
+|d(?=r)   |    matches a d only if is followed by r, but r will not be part of the overall regex match|
+|(?<=r)d  |    matches a d only if is preceded by an r, but r will not be part of the overall regex match|
+
+### You can use also the negation operator!
+
+|RegEx|Explanation|
+|---|---|
+|d(?!r)    |   matches a d only if is not followed by r, but r will not be part of the overall regex match |
+|(?<!r)d   |   matches a d only if is not preceded by an r, but r will not be part of the overall regex match |
