@@ -56,7 +56,7 @@ https://www.regular-expressions.info/
 |Character |classes — \d \w \s and .|
 |\d         |matches a single character that is a digit|
 |\w         |matches a single word character (alphanumeric character plus underscore)|
-|\s         vmatches a single whitespace character (includes tabs and line breaks)|
+|\s         |matches a single whitespace character (includes tabs and line breaks)|
 |.          |matches any character|
 |\D         |matches a single non-digit character |
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
