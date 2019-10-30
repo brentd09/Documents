@@ -50,7 +50,7 @@ https://www.regular-expressions.info/
 
 |RegEx|Explanation|
 |---|---|
-|a(b|c)     |matches a string that has, a followed by b or c|
+|a(b\|c)     |matches a string that has, a followed by b or c|
 |a[bc]      |matches a string that has, a followed by b or c|
 |Character |classes — \d \w \s and .|
 |\d         |matches a single character that is a digit|
