@@ -1,5 +1,5 @@
 # Interesting RegEx Strings
-
+NB: I have developed these just to fill a need, if you have a better way to do these I would love to hear about it.
 <BR>
 
 ### Match a valid IP Address from 1.1.1.1 to 223.255.255.255
