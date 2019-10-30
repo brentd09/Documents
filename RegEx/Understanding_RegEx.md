@@ -94,7 +94,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 |---|---|
 |x(yz)       |    parentheses create a capturing group with value yz|
 |x(?:yz)*    |    using ?: we disable the capturing group|
-|x(?<groupname>bc) |    using ?<groupname> we put a name to the group |
+|x(?\<groupname>bc) |    using ?\<groupname> we put a name to the group |
 
 ### Bracket expressions — []
 
@@ -138,7 +138,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|(?<groupname>[xyz])\k<groupname> |  we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex|
+|(?\<groupname>[xyz])\k\<groupname> |  we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex|
 
 ### Look-ahead and Look-behind — (?=) and (?<=)
 
