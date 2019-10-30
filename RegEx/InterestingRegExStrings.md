@@ -70,7 +70,7 @@ https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
 |RegEx|Explanation|
 |---|---|
 |\$\d     |  matches a string that has a $ before one digit|
-|\\\\\\\w+\\\\w+ | matches a shares UNC path name|
+|\\\\\\\\\w+\\\\\\w+ | matches a shares UNC path name|
 
 ### Non-printable characters: tab \t, new-lines \n, carriage returns \r.
 
