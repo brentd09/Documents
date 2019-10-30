@@ -23,59 +23,69 @@ https://www.regular-expressions.info/
 
 
 
-Basic topics
+## Basic topics
 
-Anchors — ^ and $
+### Anchors — ^ and $
+|RegEx|Explanation|
+|---|---|
+|^The       | matches any string that starts with, The |
+|end$       | matches a string that ends with, end|
+|^The end$  | exact string match, The end (Starts with The and a space, then ends with end)|
+|roar       | matches any string that has the text roar anywhere in it|
 
-^The        matches any string that starts with, The 
-end$        matches a string that ends with, end
-^The end$   exact string match, The end (Starts with The and a space, then ends with end)
-roar        matches any string that has the text roar anywhere in it
+### Quantifiers — * + ? and {}
 
-Quantifiers — * + ? and {}
+|RegEx|Explanation|
+|---|---|
+|abc*       | matches a string that has ab followed by zero or more c|
+|abc+       | matches a string that has ab followed by one or more c|
+|abc?       | matches a string that has ab followed by zero or one c|
+|abc{2}     | matches a string that has ab followed by 2 c|
+|abc{2,}    | matches a string that has ab followed by 2 or more c|
+|abc{2,5}  |  matches a string that has ab followed by 2,3,4 or 5 c|
+|a(bc)*     | matches a string that has a followed by zero or more copies of the sequence bc|
+|a(bc){2,5} | matches a string that has a followed by 2 to 5 copies of the sequence bc|
 
-abc*        matches a string that has ab followed by zero or more c
-abc+        matches a string that has ab followed by one or more c
-abc?        matches a string that has ab followed by zero or one c
-abc{2}      matches a string that has ab followed by 2 c
-abc{2,}     matches a string that has ab followed by 2 or more c
-abc{2,5}    matches a string that has ab followed by 2,3,4 or 5 c
-a(bc)*      matches a string that has a followed by zero or more copies of the sequence bc
-a(bc){2,5}  matches a string that has a followed by 2 to 5 copies of the sequence bc
+### OR operator — | or []
 
-OR operator — | or []
+|RegEx|Explanation|
+|---|---|
+|a(b|c)     |matches a string that has, a followed by b or c|
+|a[bc]      |matches a string that has, a followed by b or c|
+|Character |classes — \d \w \s and .|
+|\d         |matches a single character that is a digit|
+|\w         |matches a single word character (alphanumeric character plus underscore)|
+|\s         vmatches a single whitespace character (includes tabs and line breaks)|
+|.          |matches any character|
+|\D         |matches a single non-digit character -> Try it!|
+|\W         |matches a single non-word character (alphanumeric character plus underscore)|
+|\S         |matches a single non-whitespace character (includes tabs and line breaks)|
 
-a(b|c)     matches a string that has, a followed by b or c
-a[bc]      matches a string that has, a followed by b or c
-Character classes — \d \w \s and .
-\d         matches a single character that is a digit
-\w         matches a single word character (alphanumeric character plus underscore)
-\s         matches a single whitespace character (includes tabs and line breaks)
-.          matches any character
-\D         matches a single non-digit character -> Try it!
-\W         matches a single non-word character (alphanumeric character plus underscore)
-\S         matches a single non-whitespace character (includes tabs and line breaks)
+### To make special cgaractes literal add a backslash before them 
+#### Special Characters: ^.[$()|*+?{\
 
-To make special cgaractes literal add a backslash before them 
-Special Characters: ^.[$()|*+?{\
+|RegEx|Explanation|
+|---|---|
+|\$\d     |  matches a string that has a $ before one digit|
 
-\$\d       matches a string that has a $ before one digit
+### Non-printable characters: tab \t, new-lines \n, carriage returns \r.
 
-Non-printable characters: tab \t, new-lines \n, carriage returns \r.
+### Flags
+|RegEx|Explanation|
+|---|---|
+|g| (global) does not return after the first match, restarting the subsequent searches from the end of the previous match|
+|m| (multi-line) when enabled ^ and $ will match the start and end of a line, instead of the whole string|
+|i| (insensitive) makes the whole expression case-insensitive (for instance /aBc/i would match AbC)|
 
-Flags
+## Intermediate topics
 
-g (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
-m (multi-line) when enabled ^ and $ will match the start and end of a line, instead of the whole string
-i (insensitive) makes the whole expression case-insensitive (for instance /aBc/i would match AbC)
+### Grouping and capturing — ()
 
-Intermediate topics
-
-Grouping and capturing — ()
-
-a(bc)           parentheses create a capturing group with value bc
-a(?:bc)*        using ?: we disable the capturing group -> Try it!
-a(?<foo>bc)     using ?<foo> we put a name to the group -> Try it!
+|RegEx|Explanation|
+|---|---|
+|a(bc)       |    parentheses create a capturing group with value bc|
+|a(?:bc)*    |    using ?: we disable the capturing group -> Try it!|
+|a(?<foo>bc) |    using ?<foo> we put a name to the group -> Try it!|
 
 Bracket expressions — []
 
