@@ -36,30 +36,30 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 ### Anchors — ^ and $
 |RegEx|Explanation|
 |---|---|
-|^The       | matches any string that starts with, The |
-|end$       | matches a string that ends with, end|
-|^The end$  | exact string match, The end (Starts with The and a space, then ends with end)|
-|roar       | matches any string that has the text roar anywhere in it|
+|^first       | matches any string that starts with, first |
+|last$       | matches a string that ends with, last|
+|^first last$  | exact string match, The end (Starts with first and a space, then ends with last)|
+|computer       | matches any string that has the text computer anywhere in it|
 
 ### Quantifiers — * + ? and {}
 
 |RegEx|Explanation|
 |---|---|
-|abc*       | matches a string that has ab followed by zero or more c|
-|abc+       | matches a string that has ab followed by one or more c|
-|abc?       | matches a string that has ab followed by zero or one c|
-|abc{2}     | matches a string that has ab followed by 2 c|
-|abc{2,}    | matches a string that has ab followed by 2 or more c|
-|abc{2,5}  |  matches a string that has ab followed by 2,3,4 or 5 c|
-|a(bc)*     | matches a string that has a followed by zero or more copies of the sequence bc|
-|a(bc){2,5} | matches a string that has a followed by 2 to 5 copies of the sequence bc|
+|xyz*       | matches a string that has xy followed by zero or more z|
+|xyz+       | matches a string that has xy followed by one or more z|
+|xyz?       | matches a string that has xy followed by zero or one z|
+|xyz{2}     | matches a string that has xy followed by 2 z|
+|xyz{2,}    | matches a string that has xy followed by 2 or more z|
+|xyz{2,5}  |  matches a string that has xy followed by 2,3,4 or 5 z|
+|x(yz)*     | matches a string that has x followed by zero or more copies of the sequence yz|
+|x(yz){2,5} | matches a string that has x followed by 2 to 5 copies of the sequence yz|
 
 ### OR operator — | or []
 
 |RegEx|Explanation|
 |---|---|
-|a(b\|c)     |matches a string that has, a followed by b or c|
-|a[bc]      |matches a string that has, a followed by b or c|
+|x(y\|z)     |matches a string that has, x followed by y or z|
+|x[yz]      |matches a string that has, x followed by y or c|
 |Character |classes — \d \w \s and .|
 |\d         |matches a single character that is a digit|
 |\w         |matches a single word character (alphanumeric character plus underscore)|
@@ -92,17 +92,17 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|a(bc)       |    parentheses create a capturing group with value bc|
-|a(?:bc)*    |    using ?: we disable the capturing group|
-|a(?<foo>bc) |    using ?<foo> we put a name to the group |
+|x(yz)       |    parentheses create a capturing group with value yz|
+|x(?:yz)*    |    using ?: we disable the capturing group|
+|x(?<groupname>bc) |    using ?<groupname> we put a name to the group |
 
 ### Bracket expressions — []
 
 |RegEx|Explanation|
 |---|---|
-|[abc]          |  matches a string that has either an a or a b or a c -> is the same as a\|b\|c| 
-|[a-c]          |  matches a string that has either an a or a b or a c -> is the same as a\|b\|c|
-|[a-fA-F0-9]    |  a string that represents a single hexadecimal digit, case insensitively|
+|[xyz]          |  matches a string that has either an x or y or z -> is the same as x\|y\|z| 
+|[x-z]          |  matches a string that has either an x or y or z -> is the same as x\|y\|z|
+|[a-fA-F0-9]    |  a string that represents a single hexadecimal digit|
 |[0-9]%         |  a string that has a character from 0 to 9 before a % sign|
 |[^a-zA-Z]      |  a string that has not a letter from a to z or from A to Z. In this case the ^ is used as negation of the expression|
 
@@ -123,33 +123,33 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|\babc\b        |  performs a "whole words only" search|
-|\Babc\B       |   matches only if the pattern is fully surrounded by word characters|
+|\bgranny\b        |  performs a "whole words only" search|
+|\Bgranny\B       |   matches only if the pattern is fully surrounded by word characters|
 
 ### Back-references — \1
 
 |RegEx|Explanation|
 |---|---|
-|([abc])\1           |   using \1 it matches the same text that was matched by the first capturing group |
-|([abc])([de])\2\1   |   we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) |
+|([xyz])\1           |   using \1 it matches the same text that was matched by the first capturing group |
+|([xyz])([ab])\2\1   |   we can use \2 (\3, \4, etc.) to identify the same text that was matched by the second (third, fourth, etc.) |
 
 
 ### Capturing group
 
 |RegEx|Explanation|
 |---|---|
-|(?<foo>[abc])\k<foo> |  we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex|
+|(?<groupname>[xyz])\k<groupname> |  we put the name foo to the group and we reference it later (\k<foo>). The result is the same of the first regex|
 
 ### Look-ahead and Look-behind — (?=) and (?<=)
 
 |RegEx|Explanation|
 |---|---|
-|d(?=r)   |    matches a d only if is followed by r, but r will not be part of the overall regex match|
-|(?<=r)d  |    matches a d only if is preceded by an r, but r will not be part of the overall regex match|
+|x(?=y)   |    matches x only if is followed by y, but y will not be part of the overall regex match|
+|(?<=y)x  |    matches x only if is preceded by an y, but y will not be part of the overall regex match|
 
 ### You can use also the negation operator!
 
 |RegEx|Explanation|
 |---|---|
-|d(?!r)    |   matches a d only if is not followed by r, but r will not be part of the overall regex match |
-|(?<!r)d   |   matches a d only if is not preceded by an r, but r will not be part of the overall regex match |
+|x(?!y)    |   matches x only if is not followed by y, but y will not be part of the overall regex match |
+|(?<!y)x   |   matches x only if is not preceded by an y, but y will not be part of the overall regex match |
