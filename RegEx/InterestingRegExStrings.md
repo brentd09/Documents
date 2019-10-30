@@ -1,5 +1,5 @@
 # Interesting RegEx Strings
-<br>
+
 ### Match a valid IP Address from 1.1.1.1 to 223.255.255.255
 
 ```
