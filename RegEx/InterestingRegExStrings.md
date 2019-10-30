@@ -59,7 +59,7 @@ https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
 |\d         |matches a single character that is a digit|
 |\w         |matches a single word character (alphanumeric character plus underscore)|
 |\s         |matches a single whitespace character (includes tabs and line breaks)|
-|.          |matches any character|
+|.          |matches any single character|
 |\D         |matches a single non-digit character |
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
 |\S         |matches a single non-whitespace character (includes tabs and line breaks)|
@@ -70,6 +70,7 @@ https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/
 |RegEx|Explanation|
 |---|---|
 |\$\d     |  matches a string that has a $ before one digit|
+|\\\\\w+\\\w+ | matches a shares UNC path name|
 
 ### Non-printable characters: tab \t, new-lines \n, carriage returns \r.
 
