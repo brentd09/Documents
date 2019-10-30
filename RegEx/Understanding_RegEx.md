@@ -14,7 +14,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 <BR>
 
 
-### Match a valid IP Address from 1.1.1.1 to 223.255.255.255
+### Match a valid IP Address from 1.1.1.1 to 223.255.255.255 (Class A - Class C, Valid Addresses)
 
 ```
 ^(1[0-9]?[0-9]?|2[0-1][0-9]|22[0-3]|[2-9][0-9]?)\.((1[0-9]?[0-9]?|2[0-1][0-9]|2[2-5][0-5]|[2-9][0-9]?)\.){2}(1[0-9]?[0-9]?|2[0-1][0-9]|2[2-5][0-5]|[2-9][0-9]?)$
