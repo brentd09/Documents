@@ -45,21 +45,21 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|xyz*       | matches a string that has xy followed by zero or more z|
-|xyz+       | matches a string that has xy followed by one or more z|
-|xyz?       | matches a string that has xy followed by zero or one z|
-|xyz{2}     | matches a string that has xy followed by 2 z|
-|xyz{2,}    | matches a string that has xy followed by 2 or more z|
-|xyz{2,5}  |  matches a string that has xy followed by 2,3,4 or 5 z|
-|x(yz)*     | matches a string that has x followed by zero or more copies of the sequence yz|
-|x(yz){2,5} | matches a string that has x followed by 2 to 5 copies of the sequence yz|
+|xyz*       | matches a string that has "xy" followed by zero or more "z"|
+|xyz+       | matches a string that has "xy" followed by one or more "z"|
+|xyz?       | matches a string that has "xy" followed by zero or one "z"|
+|xyz{2}     | matches a string that has "xy" followed by 2 "z"|
+|xyz{2,}    | matches a string that has "xy" followed by 2 or more "z"|
+|xyz{2,5}  |  matches a string that has "xy" followed by 2,3,4 or 5 "z"|
+|x(yz)*     | matches a string that has "x" followed by zero or more copies of the sequence "yz"|
+|x(yz){2,5} | matches a string that has "x" followed by 2 to 5 copies of the sequence "yz"|
 
 ### OR operator — | or []
 
 |RegEx|Explanation|
 |---|---|
-|x(y\|z)     |matches a string that has, x followed by y or z|
-|x[yz]      |matches a string that has, x followed by y or c|
+|x(y\|z)     |matches a string that has, "x" followed by "y" or "z"|
+|x[yz]      |matches a string that has, 'x" followed by "y" or "z"|
 |Character |classes — \d \w \s and .|
 |\d         |matches a single character that is a digit|
 |\w         |matches a single word character (alphanumeric character plus underscore)|
@@ -92,7 +92,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|x(yz)       |    parentheses create a capturing group with value yz, <BR> captured data is stored in $1 for the first set of ( ), $2 for the second set of ( ), etc...|
+|x(yz)       |    parentheses create a capturing group with value "yz", <BR> captured data is stored in $1 for the first set of ( ), $2 for the second set of ( ), etc...|
 |x(?:yz)*    |    using ?: we disable the capturing group|
 |x(?\<groupname>bc) |    using ?\<groupname>, instead of $1 (default capture name) the group can be accessed by $groupname |
 
@@ -100,11 +100,11 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|[xyz]          |  matches a string that has either an x or y or z -> is the same as x\|y\|z| 
-|[x-z]          |  matches a string that has either an x or y or z -> is the same as x\|y\|z|
+|[xyz]          |  matches a string that has either an "x" or "y" or "z" -> is the same as x\|y\|z| 
+|[x-z]          |  matches a string that has either an "x" or "y" or "z" -> is the same as x\|y\|z|
 |[a-fA-F0-9]    |  a string that represents a single hexadecimal digit|
-|[0-9]%         |  a string that has a character from 0 to 9 before a % sign|
-|[^a-zA-Z]      |  a string that has not a letter from a to z or from A to Z. In this case the ^ is used as negation of the expression|
+|[0-9]%         |  a string that has a character from 0 to 9 before a "%" sign|
+|[^a-zA-Z]      |  a string that has not a letter from "a" to "z" or from "A" to "Z". <BR> In this case the ^ is used as negation of the expression|
 
 ### Inside bracket expressions all special characters lose their special character status: thus we will not apply the “escape rule”.
 
@@ -144,12 +144,12 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|x(?=y)   |    matches x only if is followed by y, but y will not be part of the overall regex match|
-|(?<=y)x  |    matches x only if is preceded by an y, but y will not be part of the overall regex match|
+|x(?=y)   |    matches "x" only if is followed by "y", but y will not be part of the overall regex match|
+|(?<=y)x  |    matches "x" only if is preceded by an "y", but y will not be part of the overall regex match|
 
 ### You can use also the negation operator!
 
 |RegEx|Explanation|
 |---|---|
-|x(?!y)    |   matches x only if is not followed by y, but y will not be part of the overall regex match |
-|(?<!y)x   |   matches x only if is not preceded by an y, but y will not be part of the overall regex match |
+|x(?!y)    |   matches "x" only if is not followed by "y", but y will not be part of the overall regex match |
+|(?<!y)x   |   matches "x" only if is not preceded by an "y", but y will not be part of the overall regex match |
