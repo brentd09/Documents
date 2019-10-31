@@ -64,11 +64,11 @@ These multiply the previous RegEx character or character group by 0 or 1 or More
 |x(yz){2,5} | matches a string that has "x" followed by 2 to 5 copies of the sequence "yz"|
 
 ### OR operator — | or []
-OR can be performed in two ways, we tend to use the ( | ) when there are character sets involved in the OR and we use [ ] when we are ORing individual characters 
+OR can be performed in two ways, we tend to use the ( \| ) when there are character sets involved in the OR and we use \[ \] when we are ORing individual characters 
 
 |RegEx|Explanation|
 |---|---|
-|x(y\|z)     |matches a string that has, "x" followed by "y" or "z"|
+|x(bob\|ben)     |matches a string that has, "x" followed by "bob" or "ben"|
 |x[yz]      |matches a string that has, 'x" followed by "y" or "z"|
 
 ### Character classes — \d \w \s and .
