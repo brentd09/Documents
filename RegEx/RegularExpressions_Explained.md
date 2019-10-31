@@ -102,7 +102,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 |\r|Carriage Return (ENTER)|
 
 ### Flags
-|RegEx Flags|Explanation|
+|RegExFlags|Explanation|
 |---|---|
 |g| (global) does not return after the first match, restarting the subsequent searches from the end of the previous match|
 |m| (multi-line) when enabled ^ and $ will match the start and end of a line, instead of the whole string|
