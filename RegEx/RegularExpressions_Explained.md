@@ -73,7 +73,7 @@ OR can be performed in two ways, we tend to use the ( \| ) when there are charac
 
 ### Character classes — \d \w \s and .
 By themselves these match one character only, generally the UPPERCASE form means a logic reverse to the lowercase class.
-. matches any character except newline, this can prove problematic if you are trying to match a literal . in this case you will need to quote the . with a backslash infront of it to remove it's special meaning (this is dicussed in the next section) 
+.(dot) matches any character except newline, this can prove problematic if you are trying to match a literal . in this case you will need to quote the . with a backslash infront of it to remove it's special meaning (this is dicussed in the next section) 
 
 |RegEx|Explanation|
 |---|---|
