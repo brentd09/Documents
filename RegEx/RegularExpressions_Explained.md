@@ -157,7 +157,7 @@ These allow you to use captured data as subsequent matches to see if duplicated 
 |RegEx|Explanation|
 |---|---|
 |([xyz])\\1           |   using \1 it matches the same text that was matched by the first capturing group |
-|^\d{1,3}\\.\d{1,3}\\.\\1\\.\\2   |   Matching an IP address where the first and third octets are the same <BR> and the second and fourth octets are the same |
+|^\d{1,3}\\.\d{1,3}\\.\\1\\.\\2\$  |   Matching an IP address where the first and third octets are the same <BR> and the second and fourth octets are the same |
 
 
 ### Named Capturing group
