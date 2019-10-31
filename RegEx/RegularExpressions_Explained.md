@@ -89,7 +89,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 
 |RegEx|Explanation|
 |---|---|
-|\$\d     |  matches a string that has a $ before one digit|
+|\\$\d     |  matches a string that has a $ before one digit|
 |\\\\\\\\\w+\\\\\\w+ | matches a shares UNC path name like \\\\server01\\share|
 
 ### Non-printable characters
