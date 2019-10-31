@@ -135,7 +135,7 @@ __*Inside bracket expressions all special characters lose their special characte
 
 ### * + {} are greedy operators.
 By default quantifiers are greedy, this means they will try to find the maximum amout of dat to match from a string, this may mot be useful as you may have repeated structures in the string where you wnat to capture just one instance of a repeated string. 
-Take for example this HTML string <html><head></head><body>This is a website</body></html> matching '<.\*>' will capture the entire string \(Greedy\). To force the quantifier to be (Lazy) use the following RegEx pattern '<.\*?>' now the first match will be <html> only.
+Take for example this HTML string \<html\>\<head\>\<\/head\>\<body\>This is a website\<\/body\>\<\/html\> matching '<.\*>' will capture the entire string \(Greedy\). To force the quantifier to be (Lazy) use the following RegEx pattern '<.\*?>' now the first match will be <html> only.
 
 |RegEx|Explanation|
 |---|---|
