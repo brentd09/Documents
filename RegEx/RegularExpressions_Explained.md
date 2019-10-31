@@ -85,7 +85,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
 |\S         |matches a single non-whitespace character (includes tabs and line breaks)|
 
-## To make special charactes literal add a backslash before each special character
+### To make special charactes literal add a backslash before each special character
 ### Special Characters: ^.[$()|*+?{\
 
 |RegEx|Explanation|
