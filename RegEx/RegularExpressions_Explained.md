@@ -8,7 +8,7 @@
 [RegEx CheetSheet](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/) <BR>
 
 
-# Interesting RegEx Strings
+# Interesting RegEx Patterns
 
 <BR>
 
@@ -35,7 +35,7 @@
 <BR>
   
 # RegEx Syntax
-Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match any where in a givien string of characters, without anchors in the RegEx string the match coul be at the start, at the end or even in the middle of the matching string.
+Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match any where in a givien string of characters, without anchors in the RegEx pattern the match coul be at the start, at the end or even in the middle of the matching string.
 
 ## Basic topics
 
