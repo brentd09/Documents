@@ -117,7 +117,7 @@ Capturing data can be useful for many reasons in RegEx, you may want to find and
 |x(yz)       |    parentheses create a capturing group with value "yz", <BR> captured data is stored in $1 for the first set of ( ), $2 for the second set of ( ), etc...|
 |x(?:yz)*    |    using ?: we disable the capturing group|
 |x(?\<group\>yz) |    using ?\<group\>, instead of $1 (default capture name) the group can be accessed by $group |
-|\(\?\:xyz\) | This will group but NOT capture the data |
+|\(\?\:xyz\) | This will group but NOT capture the data. <BR> example:\(?\<firstname\>givenname\)\\s+\(\?\:Middlename\)\\s+\(\?\<surname\>Surname\) |
 
 ### Bracket expressions — []
 Like character classes the entire \[ \] structure matches only one character, but this limits which characters will match 
