@@ -104,7 +104,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 ### Flags
 |RegExFlags|Explanation|
 |---|---|
-|g| (global) does not return after the first match, restarting the subsequent searches from the end of the previous match|
+|g| (global) does not stop after the first match, continues on searching|
 |m| (multi-line) when enabled ^ and $ will match the start and end of a line, instead of the whole string|
 |i| (insensitive) makes the whole expression case-insensitive (for instance /aBc/i would match AbC)|
 
