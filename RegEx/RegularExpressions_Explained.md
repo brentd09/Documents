@@ -143,7 +143,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 |^\d{1,3}\\.\d{1,3}\\.\\1\\.\\2   |   Matching an IP address where the first and third octets are the same <BR> and the second and fourth octets are the same |
 
 
-### Capturing group
+### Named Capturing group
 
 |RegEx|Explanation|
 |---|---|
