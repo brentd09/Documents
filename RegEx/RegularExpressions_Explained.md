@@ -127,7 +127,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 |[0-9]%         |  a string that has a character from 0 to 9 before a "%" sign|
 |[^a-zA-Z]      |  a string that has not a letter from "a" to "z" or from "A" to "Z". <BR> In this case the ^ is used as negation of the expression|
 
-### Inside bracket expressions all special characters lose their special character status: thus we will not apply the “escape rule”.
+__*Inside bracket expressions all special characters lose their special character status: no need to add \ to escape character.*__
 
 ## Greedy and Lazy match
 
