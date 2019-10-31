@@ -147,7 +147,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 
 |RegEx|Explanation|
 |---|---|
-|(?\<grpname>[xyz])\k\<group> |  we put the name "group" to the capturing-group and we reference it later (\k<group>). <BR> The result is the same of the first regex|
+|(?\<group>[xyz])\k\<group> |  we put the name "group" to the capturing-group and we reference it later (\k<group>). <BR> The result is the same of the first regex|
 
 ### Look-ahead and Look-behind — (?=) and (?<=)
 
