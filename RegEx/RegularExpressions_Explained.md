@@ -72,6 +72,8 @@ OR can be performed in two ways, we tend to use the ( \| ) when there are charac
 |x[yz]      |matches a string that has, 'x" followed by "y" or "z"|
 
 ### Character classes — \d \w \s and .
+By themselves these match one character only, generally the UPPERCASE form means a logic reverse to the lowercase class.
+. matches any character except newline, this can prove problematic if you are trying to match a literal . in this case you will need to quote the . with a backslash infront of it to remove it's special meaning (this is dicussed in the next section) 
 
 |RegEx|Explanation|
 |---|---|
@@ -83,15 +85,21 @@ OR can be performed in two ways, we tend to use the ( \| ) when there are charac
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
 |\S         |matches a single non-whitespace character (includes tabs and line breaks)|
 
-### To make special charactes literal add a backslash before each special character
-#### Special Characters: ^.[$()|*+?{\
+## To make special charactes literal add a backslash before each special character
+### Special Characters: ^.[$()|*+?{\
 
 |RegEx|Explanation|
 |---|---|
 |\$\d     |  matches a string that has a $ before one digit|
 |\\\\\\\\\w+\\\\\\w+ | matches a shares UNC path name like \\\\server01\\share|
 
-### Non-printable characters: tab \t, new-lines \n, carriage returns \r.
+### Non-printable characters
+
+|RegEx|Explanation|
+|---|---|
+|\t|Tab|
+|\n|New-Line|
+|\r|Carriage Return (ENTER)|
 
 ### Flags
 |RegEx Flags|Explanation|
