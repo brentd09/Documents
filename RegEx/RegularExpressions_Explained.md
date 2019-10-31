@@ -22,7 +22,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 ### Match an IP Address from Class C only
 
 ```
-^(19[2-9]|2[0-2][0-3])(\.(([0-9])|([1-9][0-9])|(1[0-9][0-9])|(2[0-5][0-5]))){3}$
+^(19[2-9]|2[0-2][0-3])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-5][0-5])){3}$
 ```
 
 ### Match email addresses 
