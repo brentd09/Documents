@@ -35,10 +35,13 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 <BR>
   
 # RegEx Syntax
+Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match any where in a givien string of characters, without anchors in the RegEx string the match coul be at the start, at the end or even in the middle of the matching string.
 
 ## Basic topics
 
 ### Anchors — ^ and $
+These do not match any data, they are in fact to dictate where the match should be found
+
 |RegEx|Explanation|
 |---|---|
 |^first       | matches any string that starts with, "first" |
@@ -47,6 +50,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 |computer       | matches any string that has the text "computer" anywhere in it|
 
 ### Quantifiers — * + ? and {}
+These multiply the previous RegEx character or character group by 0 or 1 or More depending on which quantifier was used in the RegEx pattern.
 
 |RegEx|Explanation|
 |---|---|
@@ -60,6 +64,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 |x(yz){2,5} | matches a string that has "x" followed by 2 to 5 copies of the sequence "yz"|
 
 ### OR operator — | or []
+OR can be performed in two ways, we tend to use the ( | ) when there are character sets involved in the OR and we use [ ] when we are ORing individual characters 
 
 |RegEx|Explanation|
 |---|---|
