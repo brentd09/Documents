@@ -65,7 +65,11 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 |---|---|
 |x(y\|z)     |matches a string that has, "x" followed by "y" or "z"|
 |x[yz]      |matches a string that has, 'x" followed by "y" or "z"|
-|Character |classes — \d \w \s and .|
+
+### Character classes — \d \w \s and .
+
+|RegEx|Explanation|
+|---|---|
 |\d         |matches a single character that is a digit|
 |\w         |matches a single word character (alphanumeric character plus underscore)|
 |\s         |matches a single whitespace character (includes tabs and line breaks)|
