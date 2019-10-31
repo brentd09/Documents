@@ -103,7 +103,7 @@ NB: I have developed these just to fill a need, if you have a better way to do t
 |---|---|
 |x(yz)       |    parentheses create a capturing group with value "yz", <BR> captured data is stored in $1 for the first set of ( ), $2 for the second set of ( ), etc...|
 |x(?:yz)*    |    using ?: we disable the capturing group|
-|x(?\<groupname>bc) |    using ?\<groupname>, instead of $1 (default capture name) the group can be accessed by $groupname |
+|x(?\<grpname>bc) |    using ?\<grpname>, instead of $1 (default capture name) the group can be accessed by $grpname |
 
 ### Bracket expressions — []
 
