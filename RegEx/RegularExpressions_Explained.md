@@ -110,6 +110,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 ## Intermediate topics
 
 ### Grouping and capturing — ()
+Capturing data can be useful for many reasons in RegEx, you may want to find and replace data using capturing and the RegEx Replace function, you may also capture data to apply a quantifier to a whole character set, etc..
 
 |RegEx|Explanation|
 |---|---|
@@ -118,6 +119,7 @@ By themselves these match one character only, generally the UPPERCASE form means
 |x(?\<group\>bc) |    using ?\<group\>, instead of $1 (default capture name) the group can be accessed by $group |
 
 ### Bracket expressions — []
+Like character classes the entire \[ \] structure matches only one character, but this limits which characters will match 
 
 |RegEx|Explanation|
 |---|---|
@@ -132,6 +134,8 @@ __*Inside bracket expressions all special characters lose their special characte
 ## Greedy and Lazy match
 
 ### * + {} are greedy operators.
+By default quantifiers are greedy, this means they will try to find the maximum amout of dat to match from a string, this may mot be useful as you may have repeated structures in the string where you wnat to capture just one instance of a repeated string. 
+Take for example this HTML string <html><head></head><body>This is a website</body></html> matching '<.\*>' will capture the entire string \(Greedy\). To force the quantifier to be (Lazy) use the following RegEx pattern '<.\*?>' now the first match will be <html> only.
 
 |RegEx|Explanation|
 |---|---|
@@ -148,6 +152,7 @@ __*Inside bracket expressions all special characters lose their special characte
 |\Bgranny\B       |   matches only if the pattern is fully surrounded by word characters|
 
 ### Back-references — \1
+These allow you to use captured data as subsequent matches to see if duplicated data exists in the test string
 
 |RegEx|Explanation|
 |---|---|
@@ -156,6 +161,8 @@ __*Inside bracket expressions all special characters lose their special characte
 
 
 ### Named Capturing group
+The default capturing groups data are stored in $1 $2 $3 etc based on the number of \( \) capturing groups you have in the RegEx 
+pattern, to make it more easy to locate captured data youcan override the default names by explicitly naming each capture group then instead of $1 you would use $GroupName.
 
 |RegEx|Explanation|
 |---|---|
