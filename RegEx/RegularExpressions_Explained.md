@@ -79,11 +79,11 @@ By themselves these match one character only, generally the UPPERCASE form means
 |---|---|
 |\d         |matches a single character that is a digit|
 |\w         |matches a single word character (alphanumeric character plus underscore)|
-|\s         |matches a single whitespace character (includes tabs and line breaks)|
+|\s         |matches a single whitespace character (includes tabs and spaces)|
 |.          |matches any single character|
 |\D         |matches a single non-digit character |
 |\W         |matches a single non-word character (alphanumeric character plus underscore)|
-|\S         |matches a single non-whitespace character (includes tabs and line breaks)|
+|\S         |matches a single non-whitespace character (includes tabs and spaces)|
 
 ### To make special charactes literal add a backslash before each special character <BR> Special Characters: ^.[$()|*+?{\
 
