@@ -28,7 +28,12 @@
 **The new subnet mask is the old subnet mask in CIDR notation + the number of traded bits from step 1**<br>
 **In our case the old subnet mask was /16 and we required 3 traded host bits to create the required subnets, so the new subnet mask is /19 (16+3)**<br>
 **In binary that is 11111111 11111111 11100000 00000000 (255.255.224.0)**<br><br>
-## Step 3 (Creating the new subnet ranges using the new Subnet Mask)
+## Step 3 (Discover the jump value between the subnets)
 **With our new sunbet mask we need to determine the mathematical jump between the new subnets**<br>
-**To do this, determine which octet is creating the subnets, in our case it is octet number 3. Next we get the value from the subnet mask from this octet, again in our case that is 224**<br>
+**To do this, determine which octet is creating the subnets, in our case it is octet number 3**<br> 
+**Next we get the value from the subnet mask from this octet, again in our case that is 224**<br>
+**We then use the following formula:**<br>
+**265 - subnet mask value = Jump value, in our case 256 - 224 = 32**<br>
+**32 is our new jump value**<br><br>
+
 
