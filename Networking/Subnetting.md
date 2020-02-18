@@ -37,15 +37,12 @@
 **32 is our jump value between each subnet**<br><br>
 ## Step 4 (Listing the subnets)
 **Using our old IPaddress and the Jump value we can now create the new sunbet ranges**<br><br>
-#### Subnet 1
-**130.4.0.0 - 130.4.31.255**
-#### Subnet 2
-**130.4.32.0 - 130.4.63.255**
-#### Subnet 3
-**130.4.64.0 - 130.4.95.255**
-#### Subnet 4
-**130.4.96.0 - 130.4.127.255**
-#### Subnet 5
-**130.4.128.0 - 130.4.159.255**
+Subnet Number | Entire Subnet | Addresses that can be assigned to hosts
+---|---|---
+Subnet 1 | 130.4.0.0 - 130.4.31.255 | 130.4.0.1 - 130.4.31.254
+Subnet 2 | 130.4.32.0 - 130.4.63.255 | 130.4.32.1 - 130.4.63.254
+Subnet 3 | 130.4.64.0 - 130.4.95.255 | 130.4.64.1 - 130.4.95.254 
+Subnet 4 | 130.4.96.0 - 130.4.127.255 | 130.4.96.1 - 130.4.127.254
+Subnet 5 | 130.4.128.0 - 130.4.159.255 | 130.4.128.1 - 130.4.159.254
 
 
