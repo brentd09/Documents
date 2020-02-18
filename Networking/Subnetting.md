@@ -34,6 +34,18 @@
 **Next we get the value from the subnet mask from this octet, again in our case that is 224**<br>
 **We then use the following formula:**<br>
 **265 - subnet mask value = Jump value, in our case 256 - 224 = 32**<br>
-**32 is our new jump value**<br><br>
+**32 is our jump value between each subnet**<br><br>
+## Step 4 (Listing the subnets)
+**Using our old IPaddress and the Jump value we can now create the new sunbet ranges**<br><br>
+#### Subnet 1
+**130.4.0.0 - 130.4.31.255
+#### Subnet 2
+**130.4.32.0 - 130.4.63.255
+#### Subnet 3
+**130.4.64.0 - 130.4.95.255
+#### Subnet 4
+**130.4.96.0 - 130.4.127.255
+#### Subnet 5
+**130.4.128.0 - 130.4.159.255
 
 
