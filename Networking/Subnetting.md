@@ -1,9 +1,9 @@
 # How to calculate subnets 
 ### Given scenario
 
-#### 130.4.0.0/16 address has been aquired for subnetting
-#### 5 subnets are required
-#### 2000 host IP addresses / subnet are required
+- 130.4.0.0/16 address has been aquired for subnetting
+- 5 subnets are required
+- 2000 host IP addresses / subnet are required
 
 ## Step 1 (How many hosts bits to trade for subnets)
 
