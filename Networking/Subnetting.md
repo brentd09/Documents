@@ -24,8 +24,8 @@
 
 - to get 4 subnets we need to trade 2 host bits to networks
 - to get 8 subnets we need to trade 3 host bits to networks> 
-- In this case 4 subnets (trading 2 host bits to networks) is not enough as we need 5 subnets, therefore we need to trade 3 host bits, giving us 8 networks. We could trade more host bits giving us more networks, however we would also need to make sure we have enough host bits remaining to accomodate the required hosts/subnet requirements. 
-- This calcluation is done with this formular
+- In this case 4 subnets (trading 2 host bits to networks) is not enough as we need 5 subnets, therefore we need to trade 3 host bits, giving us 8 networks. We could trade more host bits giving us more networks, however we would also need to make sure we have enough host bits remaining to accomodate the required hosts / subnet requirements. 
+- This formula for calulating the hosts / subnet is:
   - (2<sup>host bits</sup>)-2=Number Of Host Addresses 
 ## Step 2 (Creating the new Subnet Mask)
 - From step 1 we have learnt how many bits we needed to trade to create the required subnets
@@ -39,8 +39,13 @@
 - We then use the following formula:
   - 265 - subnet mask value = Jump value, in our case 256 - 224 = 32
 - 32 is our jump value between each subnet
-## Step 4 (Check to see if your solution has enough hosts/subnet)
-
+## Step 4 (Check to see if your solution has enough hosts / subnet)
+- From the CIDR notation we can see
+  - We have 19 bits for hosts (count the number of 1's in the binary subnet mask)
+  - This means we have 13 bits for hosts / subnet (count the 0's in the binary subnet mask)
+- As shown in step 1, the calculation for hosts/subnet in our case is:
+  - (2<sup>13</sup) - 2 = 8190 hosts / subnet
+- 8190 exceeds our requirements of 2000 hosts / subnet  
 ## Step 5 (Listing the subnets)
 **Using our old IPaddress and the Jump value we can now create the new sunbet ranges**<br><br>
 
