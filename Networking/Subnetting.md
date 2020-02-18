@@ -9,7 +9,7 @@
 
 ### How many bits do we need to trade from the hosts to accomodate the networks required?
 
-### 2<sup>number of traded host bits</sup>=Number of Subnets
+### 2<sup>(number of traded host bits)</sup>=Number of Subnets
 - 2<sup>1</sup>=2
 - 2<sup>2</sup>=4
 - 2<sup>3</sup>=8
