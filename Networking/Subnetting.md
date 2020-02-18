@@ -22,16 +22,16 @@
 
 **This shows us:**
 
-- to get 4 subnets we need to trade 2 host bits to networks**<br> 
-- to get 8 subnets we need to trade 3 host bits to networks**<br><br> 
+- to get 4 subnets we need to trade 2 host bits to networks
+- to get 8 subnets we need to trade 3 host bits to networks> 
 - In this case 4 subnets (trading 2 host bits to networks) is not enough as we need 5 subnets, therefore we need to trade 3 host bits, giving us 8 networks. We could trade more host bits giving us more networks, however we would also need to make sure we have enough host bits remaining to accomodate the required hosts/subnet requirements. 
-- This calcluation is done with this formular**<br>
-  - (2<sup>host bits</sup>)-2=Number Of Host Addresses**<br><br> 
+- This calcluation is done with this formular
+  - (2<sup>host bits</sup>)-2=Number Of Host Addresses 
 ## Step 2 (Creating the new Subnet Mask)
-**From step 1 we have learnt how many bits we needed to trade to create the required subnets**<br>
-**The new subnet mask = the old subnet mask in CIDR notation + the number of traded bits from step 1**<br>
-**In our case the old subnet mask was /16 and we required 3 traded host bits to create the required subnets, so the new subnet mask is /19 (16+3)**<br>
-**In binary that is 11111111 11111111 11100000 00000000 (255.255.224.0)**<br><br>
+- From step 1 we have learnt how many bits we needed to trade to create the required subnets
+- The new subnet mask = the old subnet mask in CIDR notation + the number of traded bits from step 1
+- In our case the old subnet mask was /16 and we required 3 traded host bits to create the required subnets, so the new subnet mask is /19 (16+3)
+- In binary that is 11111111 11111111 11100000 00000000 or (255.255.224.0)
 ## Step 3 (Discover the jump value between the subnets)
 - With our new sunbet mask we need to determine the mathematical jump between the new subnets
 - To do this, determine which octet is creating the subnets, in our case it is octet number 3 
