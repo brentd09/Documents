@@ -7,6 +7,6 @@
 $Matches.Remove(0)
 New-Object -TypeName PSObject -Property $Matches
 ```
-**$Matches is a system variable that will be populated with the match capturing brackets, using the naming as above you can name the keys in the hash table**
+**$Matches is a system variable that will be populated with the match capturing brackets, using the naming *?\<firstoctet>* as above you can name the keys in the hash table**
 
 **The $Matches.Remove(0) command removes the 0 key from the hashtable which is the entire string matched, which by default is always added as well to the hash table along with the captured portions**
