@@ -1,6 +1,6 @@
 # Using -match to create a PowerShell object
 
-### Use the following code to utilise -match
+### Use the following code
 
 ```
 '123.34.56.221' -match '^(?<FirstOctet>\d{1,3})\.(?<SecondOctet>\d{1,3})\.(?<ThirdOctet>\d{1,3})\.(?<FourthOctet>\d{1,3})$'
