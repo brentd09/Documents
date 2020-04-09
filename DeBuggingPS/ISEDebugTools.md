@@ -49,10 +49,10 @@
 - $PSBoundParameters
 - $Args
 
-- If you try to display the value of any of these variables, you get the value of that variable for in an internal pipeline the debugger uses, not the value of the variable in the script. 
+**If you try to display the value of any of these variables, you get the value of that variable for in an internal pipeline the debugger uses, not the value of the variable in the script.** 
 - You can work around this for a few variables ($_, $Input, $MyInvocation, $PSBoundParameters, and $Args) by using the following method:
  - In the script, assign the value of the automatic variable to a new variable.
  - Display the value of the new variable, either by hovering over the new variable in the Script Pane, or by typing the new variable in the Console Pane.
 
-**For example**
+***For example***
 - To display the value of the $MyInvocation variable, in the script, assign the value to a new variable, such as $scriptName, and then hover over or type the $scriptName variable to display its value.
