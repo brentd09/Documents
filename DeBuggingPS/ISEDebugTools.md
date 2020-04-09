@@ -5,17 +5,17 @@
 - After you start debugging, you cannot edit a script until you stop debugging. A script that has one or more breakpoints set is automatically saved before it is run.
 
 ### To start debugging
-- Press F5 or, on the toolbar, click the Run Script icon, or on the Debug menu click Run/Continue. The script runs until it encounters the first breakpoint. It pauses operation there and highlights the line on which it paused.
+- Press **F5** or, on the toolbar, click the Run Script icon, or on the Debug menu click Run/Continue. The script runs until it encounters the first breakpoint. It pauses operation there and highlights the line on which it paused.
 
 ### To continue debugging
-- Press F5 or, on the toolbar, click the Run Script icon, or on the Debug menu, click Run/Continue or, in the Console Pane, type C and then press ENTER. This causes the script to continue running to the next breakpoint or to the end of the script if no further breakpoints are encountered.
+- Press **F5** or, on the toolbar, click the Run Script icon, or on the Debug menu, click Run/Continue or, in the Console Pane, type C and then press ENTER. This causes the script to continue running to the next breakpoint or to the end of the script if no further breakpoints are encountered.
 
 ### To view the call stack
 - The call stack displays the current run location in the script. If the script is running in a function that was called by a different function, then that is represented in the display by additional rows in the output. The bottom-most row displays the original script and the line in it in which a function was called. The next line up shows that function and the line in it in which another function might have been called. The top-most row shows the current context of the current line on which the breakpoint is set.
-- While paused, to see the current call stack, press CTRL+SHIFT+D or, on the Debug menu, click Display Call Stack or, in the Console Pane, type K and then press ENTER.
+- While paused, to see the current call stack, press **CTRL+SHIFT+D** or, on the Debug menu, click Display Call Stack or, in the Console Pane, type K and then press ENTER.
 
 ### To stop debugging
-- Press SHIFT+F5 or, on the Debug menu, click Stop Debugger, or, in the Console Pane, type Q and then press ENTER.
+- Press **SHIFT+F5** or, on the Debug menu, click Stop Debugger, or, in the Console Pane, type Q and then press ENTER.
 
 # How to step over, step into, and step out while debugging
 
@@ -24,10 +24,10 @@
 
 |Debugging Task |	Description |	How to accomplish it in PowerShell ISE|
 |---|---|---|
-|Step Into	|Executes the current statement and then stops at the next statement. If the current statement is a function or script call, then the debugger steps into that function or script, otherwise it stops at the next statement.	|Press F11 or, on the Debug menu, click Step Into, or in the Console Pane, type S and press ENTER.|
-|Step Over	|Executes the current statement and then stops at the next statement. If the current statement is a function or script call, then the debugger executes the whole function or script, and it stops at the next statement after the function call.	|Press F10 or, on the Debug menu, click Step Over, or in the Console Pane, type V and press ENTER.|
-|Step Out	|Steps out of the current function and up one level if the function is nested. If in the main body, the script is executed to the end, or to the next breakpoint. The skipped statements are executed, but not stepped through.	|Press SHIFT+F11, or on the Debug menu, click Step Out, or in the Console Pane, type O and press ENTER.|
-|Continue	|Continues execution to the end, or to the next breakpoint. The skipped functions and invocations are executed, but not stepped through.	|Press F5 or, on the Debug menu, click Run/Continue, or in the Console Pane, type C and press ENTER.|
+|Step Into	|Executes the current statement and then stops at the next statement. If the current statement is a function or script call, then the debugger steps into that function or script, otherwise it stops at the next statement.	|Press **F11** or, on the Debug menu, click Step Into, or in the Console Pane, type S and press ENTER.|
+|Step Over	|Executes the current statement and then stops at the next statement. If the current statement is a function or script call, then the debugger executes the whole function or script, and it stops at the next statement after the function call.	|Press **F10** or, on the Debug menu, click Step Over, or in the Console Pane, type V and press ENTER.|
+|Step Out	|Steps out of the current function and up one level if the function is nested. If in the main body, the script is executed to the end, or to the next breakpoint. The skipped statements are executed, but not stepped through.	|Press **SHIFT+F11**, or on the Debug menu, click Step Out, or in the Console Pane, type O and press ENTER.|
+|Continue	|Continues execution to the end, or to the next breakpoint. The skipped functions and invocations are executed, but not stepped through.	|Press **F5** or, on the Debug menu, click Run/Continue, or in the Console Pane, type C and press ENTER.|
 
 # How to display the values of variables while debugging
 - You can display the current values of variables in the script as you step through the code.
