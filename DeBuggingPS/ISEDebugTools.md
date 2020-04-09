@@ -29,7 +29,7 @@
 |Step Out	|Steps out of the current function and up one level if the function is nested. If in the main body, the script is executed to the end, or to the next breakpoint. The skipped statements are executed, but not stepped through.	|Press SHIFT+F11, or on the Debug menu, click Step Out, or in the Console Pane, type O and press ENTER.|
 |Continue	|Continues execution to the end, or to the next breakpoint. The skipped functions and invocations are executed, but not stepped through.	|Press F5 or, on the Debug menu, click Run/Continue, or in the Console Pane, type C and press ENTER.|
 
-### How to display the values of variables while debugging
+# How to display the values of variables while debugging
 - You can display the current values of variables in the script as you step through the code.
 
 ### To display the values of standard variables
