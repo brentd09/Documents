@@ -1,4 +1,4 @@
-# How to manage a debugging session
+# How to Debug a PowerShell Script in ISE
 
 - Before you start debugging, you must set one or more breakpoints. You cannot set a breakpoint unless the script that you want to debug is saved. 
 - For directions on of how to set a breakpoint, see How to manage breakpoints or Set-PSBreakpoint. 
