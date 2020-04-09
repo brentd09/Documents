@@ -56,3 +56,5 @@
 
 ***For example***
 - To display the value of the $MyInvocation variable, in the script, assign the value to a new variable, such as $scriptName, and then hover over or type the $scriptName variable to display its value.
+
+**Source:** [Debug Scripts from MS Docs](https://docs.microsoft.com/en-us/powershell/scripting/components/ise/how-to-debug-scripts-in-windows-powershell-ise?view=powershell-7)
