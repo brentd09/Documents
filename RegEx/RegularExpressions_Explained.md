@@ -185,6 +185,7 @@ pattern, to make it more easy to locate captured data youcan override the defaul
 
 <br>
 <br>
+
 # Powershell examples with Regex
 
 ## RegEx Replace
