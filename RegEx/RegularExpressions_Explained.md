@@ -182,3 +182,14 @@ pattern, to make it more easy to locate captured data youcan override the defaul
 |---|---|
 |x(?!y)    |   matches "x" only if is not followed by "y", but y will not be part of the overall regex match |
 |(?<!y)x   |   matches "x" only if is not preceded by an "y", but y will not be part of the overall regex match |
+
+# Powershell examples with Regex
+
+## RegEx Replace
+ 
+### You can use RegEx to replace strings
+
+|RegEx|Explanation|
+|---|---|
+|'Dowe, John' -Replace '^(\[a-z]+),\s+(\[a-z]+)$','$2 $1'    |   The result will be John Dowe, this captures the surname in the first caputure brackets and the given name in the second capture brackets and then returns them in the opposite order with a space between them |
+|'The Dog was sold for 23.56' -replace 'The\s+([a-z]+)\s.+(\d\d\.\d\d)','$1 $$$2' | The result will be Dog $23.56, the $$ is code for escaping a $ sign which will appear before the money value $2|
