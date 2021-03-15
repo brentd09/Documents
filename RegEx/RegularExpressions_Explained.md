@@ -3,7 +3,7 @@
 
 [RegEx Tutorial](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285) <BR>
 [RegEx Cookbook](https://medium.com/factory-mind/regex-cookbook-most-wanted-regex-aa721558c3c1) <BR>
-[RegEx Testing Playpen](https://regex101.com) <BR>
+[RegEx 101](https://regex101.com) <BR>
 [RegEx Complete Guide](https://www.regular-expressions.info/) <BR>
 [RegEx CheetSheet](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/) <BR>
 [RegEx Step by step Tutorial](https://regexone.com/)
@@ -16,7 +16,7 @@
 ### Match a valid IP Address from 1.1.1.1 to 223.255.255.255 (Class A - Class C, Valid Addresses)
 
 ```
-^([1-9][0-9]?|(?!127)1[0-9][0-9]?|2[0-2][0-3])\.(([0-9]|1[0-9][0-9]?|[1-9][0-9?]|2[0-5][0-5])\.){2}([0-9]|1[0-9][0-9]?|[1-9][0-9?]|2[0-5][0-5])$
+^([1-9][0-9]?|(?!127)1[0-9][0-9]?|2[0-2][0-3])\.(([1-9][0-9]?|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){2}([1-9][0-9]?|1[0-9]{2}|2[0-4][0-9]|25[0-5])$
 ```
 
 ### Match an IP Address from Class C only
