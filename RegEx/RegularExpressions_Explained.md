@@ -6,8 +6,8 @@
 [RegEx 101](https://regex101.com) <BR>
 [RegEx Complete Guide](https://www.regular-expressions.info/) <BR>
 [RegEx CheetSheet](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/) <BR>
-[RegEx Step by step Tutorial](https://regexone.com/)
-[RegEx Railroad Diagrams](https://regexper.com/)  
+[RegEx Step by step Tutorial](https://regexone.com/)<BR>
+[RegEx Railroad Diagrams](https://regexper.com/) <BR> 
 
 # Interesting RegEx Patterns
 
