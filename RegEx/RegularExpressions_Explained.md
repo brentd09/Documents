@@ -1,6 +1,5 @@
 # Good RegEx Urls
 
-
 [RegEx Tutorial](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285) <BR>
 [RegEx Cookbook](https://medium.com/factory-mind/regex-cookbook-most-wanted-regex-aa721558c3c1) <BR>
 [RegEx 101](https://regex101.com) <BR>
