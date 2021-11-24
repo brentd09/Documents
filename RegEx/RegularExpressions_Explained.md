@@ -32,7 +32,7 @@
 ^([a-z][0-9][\!\@\#\$\%\^\&\*\(\)\_\-\=\\\/\[\]\{\}\:\;.,><\?])+@([a-z0-9]+\.)+[a-z0-9]{2,3}\.?$
 ```
 
-<BR>
+<br>
   
 # RegEx Syntax
 Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match any where in a givien string of characters, without anchors in the RegEx pattern the match coul be at the start, at the end or even in the middle of the matching string.
