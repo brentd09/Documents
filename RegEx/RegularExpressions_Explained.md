@@ -1,8 +1,12 @@
 # Good RegEx Urls
 
+### Great RegEx testing tools
+[RegExr](https://regexer.com) <BR>
+[RegEx 101](https://regex101.com) <BR>
+
+### Tutorials
 [RegEx Tutorial](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649dc1c3f285) <BR>
 [RegEx Cookbook](https://medium.com/factory-mind/regex-cookbook-most-wanted-regex-aa721558c3c1) <BR>
-[RegEx 101](https://regex101.com) <BR>
 [RegEx Complete Guide](https://www.regular-expressions.info/) <BR>
 [RegEx CheetSheet](https://www.cheatography.com/davechild/cheat-sheets/regular-expressions/) <BR>
 [RegEx Step by step Tutorial](https://regexone.com/)<BR>
