@@ -39,8 +39,8 @@
 - Thinking that it may have found a match, it compares the next letter of the pattern **o** with the following character from the String c**r**itically which is **r**
 - This is not a match so regex backs up to the letter after the **c** where it thought there might be a match and starts over again from the **r** this time
 - Regex keeps doing this until all of the pattern is matched (In non-global mode the first complete match stops the comparing process) or it does not match at all
-- When regex gets the the word **concerned** the pattern is match for the first 3 characters **con** hovever the 4th character is not a match
-- Not being a complete match regex backs up to the letter **o** (the second letter of the word **concerned** and starts this process all over again 
+- When regex gets the the word **concerned** the pattern is match for the first 3 characters **con** hovever the 4th character is not a match **v** does not match **c**
+- Not being a complete match regex backs up to the letter **o** (the second letter of the word **concerned**) and starts this process all over again 
   
 # RegEx Syntax
 Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match anywhere in a given string of characters, without anchors in the RegEx pattern the match could be at the start, at the end or even in the middle of the matching string.
