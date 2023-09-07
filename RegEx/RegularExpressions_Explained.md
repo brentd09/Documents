@@ -43,39 +43,47 @@
 - Not being a complete match regex backs up to the letter **o** (the second letter of the word **concerned**) and starts this process all over again
 
 <br>
-
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 |c| | | | | | | | | | | | | | | | | | | | | | | | | | | 
 
-<br>
+### c does not match T so regex tries the next character
 
+<br>
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | |c| | | | | | | | | | | | | | | | | | | | | | | | | | 
 
-<br>
+### c does not match h so regex tries the next character
 
+<br>
 | | | | | | | | | | | | | | | | | | | | | | | | | | | | 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | |c| | | | | | | | | | | | | | | | | | | | | | | | | 
 
-<br>
+### c does not match e so regex tries the next character
 
+
+<br>
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | |c| | | | | | | | | | | | | | | | | | | | | | | |
 
-<br>
+### c does not match [SPACE] so regex tries the next character
 
+
+<br>
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | |c| | | | | | | | | | | | | | | | | | | | | | | 
+
+### c does match c so regex tries to match the second character of the pattern with the next character of the string
+
 
 <br>
 
@@ -84,6 +92,8 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | |c|o| | | | | | | | | | | | | | | | | | | | | | 
 
+### c and o do not match the c and r, so regex backs up to the next character after the c in the string
+
 <br>
 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
@@ -91,15 +101,29 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | |c| | | | | | | | | | | | | | | | | | | | | |
 
+
+### c does not match r so regex tries the next character
+
 <br>
 
-### Later at the word concerned
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
+| | | | | | |c| | | | | | | | | | | | | | | | | | | | |
+
+<br>
+
+### Later, when testing the word 'concerned'
 
 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c| | | | | | | | | | | |
+
+### c does match c so regex tries to match the second char in the pattern
+
 
 <br>
 
@@ -109,12 +133,18 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c|o| | | | | | | | | | |
 
+### c and o match c and o so regex tries to match the third char in the pattern
+
+
 <br>
 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c|o|n| | | | | | | | | | 
+
+### c, o and n  match c and o and n so regex tries to match the fourth char in the pattern
+
 
 <br>
 
@@ -123,12 +153,18 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c|o|n|v| | | | | | | | |
 
+### v does not match c so regex backtracks to the character after the c match and starts again
+
+
 <br>
 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | | |c| | | | | | | | | | |
+
+### c does not match o so regex will try the next character
+
 
 <br>
 
