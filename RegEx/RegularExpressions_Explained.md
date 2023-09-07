@@ -42,6 +42,8 @@
 - When regex gets the the word **concerned** the pattern is match for the first 3 characters **con** hovever the 4th character is not a match **v** does not match **c**
 - Not being a complete match regex backs up to the letter **o** (the second letter of the word **concerned**) and starts this process all over again
 
+| | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|n|a|r|y| |c|h|i|r|p|e|d|
   
 # RegEx Syntax
