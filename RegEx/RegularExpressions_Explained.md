@@ -56,7 +56,7 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 |c| | | | | | | | | | | | | | | | | | | | | | | | | | | 
 
-### c does not match T so regex tries the next character
+### c (from conv) does not match T so regex tries the next character
 
 <br>
 
@@ -104,7 +104,7 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | |c|o| | | | | | | | | | | | | | | | | | | | | | 
 
-### c and o do not match the c and r, so regex backs up to the next character after the c in the string
+### c and o (from conv) do not match the c and r, so regex backs up to the next character after the c in the string
 
 <br>
 
@@ -136,7 +136,7 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c| | | | | | | | | | | |
 
-### c does match c so regex tries to match the second char in the pattern
+### c (from conv) does match c so regex tries to match the second char in the pattern
 
 
 <br>
