@@ -179,6 +179,41 @@
 
 ### c does not match o so regex will try the next character and so on.
 
+### Now we will look at this process further in the string
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|a|s| |i|t| |w|a|s| |c|o|n|v|e|y|e|d| |i|n|t|o| |t|h|e|
+| | | | | | | | | | |c| | | | | | | | | | | | | | | | |
+
+### When matching the word conveyed, c (from conv) matches the c in conveyed so the second letter of the pattern is tried
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|a|s| |i|t| |w|a|s| |c|o|n|v|e|y|e|d| |i|n|t|o| |t|h|e|
+| | | | | | | | | | |c|o| | | | | | | | | | | | | | | |
+
+### c and o (from the pattern) match c and o from the string, so the third letter is tried
+
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|a|s| |i|t| |w|a|s| |c|o|n|v|e|y|e|d| |i|n|t|o| |t|h|e|
+| | | | | | | | | | |c|o|n| | | | | | | | | | | | | | |
+
+### c,o and n (from the pattern) match c, o and n from the string, so the fourth letter is tried
+
+
+| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+|a|s| |i|t| |w|a|s| |c|o|n|v|e|y|e|d| |i|n|t|o| |t|h|e|
+| | | | | | | | | | |c|o|n|v| | | | | | | | | | | | | |
+
+### c, o, n and v (from the pattern) match c, o, n and v from the string
+
+> **Because the entire pattern is matched this is considered a match**
+
+
 
 <br>
 
