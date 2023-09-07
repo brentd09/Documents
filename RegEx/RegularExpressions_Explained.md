@@ -167,7 +167,7 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c|o|n|v| | | | | | | | |
 
-### v does not match c so regex backtracks to the character after the c match and starts again
+### v does not match c so regex backtracks to the letter o as the next character in the word concerned
 
 
 <br>
@@ -177,7 +177,7 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | | |c| | | | | | | | | | |
 
-### c does not match o so regex will try the next character
+### c does not match o so regex will try the next character and so on.
 
 
 <br>
