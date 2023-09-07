@@ -30,6 +30,7 @@
 ```
 <br>
 # How does RegEx work
+
 - Given a regex pattern of 'con' and a string to match like this 'The critically concerned canary chirped loudly as it was conveyed into the mine shaft'  
 - Regex tries to match the first letter of the pattern 'con' with each letter of the string (or sentence) 'The critically concerned canary chirped loudly as it was conveyed into the mine shaft'
 - **c** gets compared with **T**, and then **h**, and then **e**, then **[SPACE]**, and finally it matches the '**c**' from '**c**ritically'
