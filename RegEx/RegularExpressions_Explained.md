@@ -34,7 +34,11 @@
 
 - Given a regex pattern of 'con' and a string to match like this 'The critically concerned canary chirped loudly as it was conveyed into the mine shaft'  
 - Regex tries to match the first letter of the pattern 'con' with each letter of the string (or sentence) 'The critically concerned canary chirped loudly as it was conveyed into the mine shaft'
-- **c** gets compared with **T**, and then **h**, and then **e**, then **[SPACE]**, and finally it matches the '**c**' from '**c**ritically'
+- **c** (from 'con') gets compared with **T**, and then **h**, and then **e**, then **[SPACE]**, and finally it matches the '**c**' from '**c**ritically'
+- Thinking that it may have found a match, it compares the next letter of the pattern '**o**' with the following character from the String 'c**r**itically' '**r**'
+- This is not a match so regex backs up to the letter after the '**c**' where it thought there might be a match and starts over again from the '**r**' this time
+- Regex keeps doing this until all of the pattern is matched (In non-global mode the first complete match stops the comparing process)
+- 
   
 # RegEx Syntax
 Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match anywhere in a given string of characters, without anchors in the RegEx pattern the match could be at the start, at the end or even in the middle of the matching string.
