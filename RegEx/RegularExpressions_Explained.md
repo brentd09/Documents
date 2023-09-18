@@ -93,7 +93,8 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | |c|o| | | | | | | | | | | | | | | | | | | | | | 
 
-### c and o (from conv) do not match the c and r, so regex backs up to the next character after the c in the string
+### c and o (from conv) do not match the c and r, so regex backs up to the character after the c 
+### from the last potential match and start searching again from the start of the pattern
 
 <br>
 
@@ -103,7 +104,7 @@
 | | | | | |c| | | | | | | | | | | | | | | | | | | | | |
 
 
-### c does not match r so regex tries the next character
+### c does not match r from the string so regex tries the next character
 
 <br>
 
@@ -113,7 +114,7 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | |c| | | | | | | | | | | | | | | | | | | | |
 
-### c does not match i so regex will keep trying
+### c does not match i, so regex will keep trying
 
 <br>
 
