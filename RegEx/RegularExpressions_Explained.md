@@ -12,6 +12,35 @@
 [RegEx Step by step Tutorial](https://regexone.com/)<BR>
 [RegEx Railroad Diagrams](https://regexper.com/) <BR> 
 
+# What are Regular Expressions
+
+<p>
+  Regular Expression or RegEx for short is a system for searching, matching and modifying text. RegEx has syntax rules that 
+  describe what text to match this is called the RegEx pattern.  Some of the rules of the syntax are shown below. 
+  
+  One important thing to understand regarding RegEx is that it searches for the left to the right in a string of characters 
+  looking for a match by comparing each letter of the string with the first character class of the pattern. 
+  If the first character matches the current character in the string, Regex considers this to be a potential
+  match and so it then checks the next character in the string with the second character of the pattern and so on until
+  it either matches the entire pattern (confirmed match) or it fails to match the whole pattern. If it fails to match the 
+  entire pattern RegEx backtracks to the second letter of the potential match and begins again to match this character 
+  with the first letter of the pattern (starting the search process again
+</p>
+
+# Example of RegEx in operation
+
+- Given a regex pattern of **conv** and a string to match like this
+  - **The critically concerned canary chirped loudly as it was conveyed into the mine shaft**  
+- Regex tries to match the first letter of the pattern **conv** with each letter of the string (or sentence) **The critically concerned canary chirped loudly as it was conveyed into the mine shaft**
+- **c** (from 'conv') gets compared with **T**, and then **h**, and then **e**, then **[SPACE]**, and finally it matches the **c** from **c**ritically
+- Thinking that it may have found a match, it compares the next letter of the pattern **o** with the following character from the String c**r**itically which is **r**
+- This is not a match so regex backs up to the letter after the **c** where it thought there might be a match and starts over again from the **r** this time
+- Regex keeps doing this until all of the pattern is matched (In non-global mode the first complete match stops the comparing process) or it does not match at all
+- When regex gets the the word **concerned** the pattern is match for the first 3 characters **con** hovever the 4th character is not a match **v** does not match **c**
+- Not being a complete match regex backs up to the letter **o** (the second letter of the word **concerned**) and starts this process all over again
+
+<br>
+
 # Interesting RegEx Patterns
 
 <BR>
@@ -30,19 +59,7 @@
 ```
 <br>
 
-# How does RegEx work
 
-- Given a regex pattern of **conv** and a string to match like this
-  - **The critically concerned canary chirped loudly as it was conveyed into the mine shaft**  
-- Regex tries to match the first letter of the pattern **conv** with each letter of the string (or sentence) **The critically concerned canary chirped loudly as it was conveyed into the mine shaft**
-- **c** (from 'conv') gets compared with **T**, and then **h**, and then **e**, then **[SPACE]**, and finally it matches the **c** from **c**ritically
-- Thinking that it may have found a match, it compares the next letter of the pattern **o** with the following character from the String c**r**itically which is **r**
-- This is not a match so regex backs up to the letter after the **c** where it thought there might be a match and starts over again from the **r** this time
-- Regex keeps doing this until all of the pattern is matched (In non-global mode the first complete match stops the comparing process) or it does not match at all
-- When regex gets the the word **concerned** the pattern is match for the first 3 characters **con** hovever the 4th character is not a match **v** does not match **c**
-- Not being a complete match regex backs up to the letter **o** (the second letter of the word **concerned**) and starts this process all over again
-
-<br>
 
 ## This demonstration shows how regex works for standard matching
 
