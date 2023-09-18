@@ -98,7 +98,7 @@
 
 <br>
 
-| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| | | | | |<| | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | |c| | | | | | | | | | | | | | | | | | | | | |
@@ -157,12 +157,13 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c|o|n|v| | | | | | | | |
 
-### v does not match c so regex backtracks to the letter o as the next character in the word concerned
+### conv from the pattern does not match conc from the string so regex backtracks 
+### to the letter o and starts the searching again from the start of the pattern
 
 
 <br>
 
-| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | | | |<|<|<| | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | | |c| | | | | | | | | | |
