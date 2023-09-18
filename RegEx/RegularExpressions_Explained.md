@@ -260,14 +260,14 @@ These multiply the previous RegEx character or character group by 0 or 1 or More
 
 |RegEx|Explanation|
 |---|---|
-|xyz*       | matches a string that has "xy" followed by zero or more "z"|
-|xyz+       | matches a string that has "xy" followed by one or more "z"|
-|xyz?       | matches a string that has "xy" followed by zero or one "z"|
-|xyz{2}     | matches a string that has "xy" followed by 2 "z"|
-|xyz{2,}    | matches a string that has "xy" followed by 2 or more "z"|
-|xyz{2,5}  |  matches a string that has "xy" followed by 2,3,4 or 5 "z"|
-|x(yz)*     | matches a string that has "x" followed by zero or more copies of the sequence "yz"|
-|x(yz){2,5} | matches a string that has "x" followed by 2 to 5 copies of the sequence "yz"|
+|xyz*       | matches a string that has "xy" followed by zero or more "z" e.g. xy or xyz or xyzz or xyzzz etc.|
+|xyz+       | matches a string that has "xy" followed by one or more "z" e.g. xyz or xyzz or xyzzz etc. but not xy|
+|xyz?       | matches a string that has "xy" followed by zero or one "z" e.g. xy or xyz|
+|xyz{2}     | matches a string that has "xy" followed by 2 "z" e.g. xyzz|
+|xyz{2,}    | matches a string that has "xy" followed by 2 or more "z" e.g. xyzz or xyzzz or xyzzzz etc. but not xyz|
+|xyz{2,5}  |  matches a string that has "xy" followed by 2,3,4 or 5 "z" e.g. xyzz or xyzzz or xyzzzz or xyzzzzz etc. but not xyz|
+|x(yz)*     | matches a string that has "x" followed by zero or more copies of the sequence "yz" e.g. x or xy or xz or xyyy or xzzz etc.|
+|x(yz){2,5} | matches a string that has "x" followed by 2 to 5 copies of the sequence "yz" e.g. xyy or xyyy or xyyyyy or xyyyyyy or xzz or xzzz or xzzzz or xzzzzz etc. but not xy or xz|
 
 ### OR operator — | or []
 OR can be performed in two ways, we tend to use the ( \| ) when there are character sets involved in the OR and we use \[ \] when we are ORing individual characters 
