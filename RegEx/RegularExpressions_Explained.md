@@ -81,7 +81,9 @@
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | |c| | | | | | | | | | | | | | | | | | | | | | | 
 
-### c does match c so regex tries to match the second character of the pattern with the next character of the string
+### c does match c, this is considered a potential match
+
+### so regex tries to match the second character of the pattern with the next character of the string
 
 
 <br>
