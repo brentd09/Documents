@@ -405,6 +405,36 @@ pattern, to make it easier to locate captured data you can override the default 
 
 ## RegEx Split 
 
-|RegEx|Explanation|
+|RegExPattern|Explanation|
 |---|---|
 |'123.4.5.32' -Split '\\.'| The result will be an array of 4 strings @('123','4','5','32'). The backslash dot \\. is to escape the dot character as literal|
+
+---
+
+## You can use [RegEx] class to do matching and replacing as well
+
+### Matching 
+
+```PowerShell
+# Checking for valid email addresses
+$RegExPattern = [regex]::new("^([a-zA-Z0-9!#$&%'*+?=^_`{|./-]){1,63}@[a-zA-z09]{2,63}(\.[a-zA-z09]{2,63})+$",'Compiled')
+
+# To use this pattern, do the following
+$RexPattern.Matches('brent.denny@companyname.com')
+
+# This will return all of the matches 
+
+```
+
+### Replacing 
+
+```PowerShell
+# Match what needs to be replaced
+$RegExPattern = [regex]::new('\+','Compiled')
+
+# To use this pattern, to replace + with a .
+$RexPattern.Replace('brent+denny@companyname.com','.')
+
+# This will replace and +'s with .'s
+brent.denny@companyname.com
+```
