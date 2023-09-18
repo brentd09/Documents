@@ -16,15 +16,19 @@
 
 <p>
   Regular Expression or RegEx for short is a system for searching, matching and modifying text. RegEx has syntax rules that 
-  describe what text to match this is called the RegEx pattern.  Some of the rules of the syntax are shown below. 
+  describe what text to match and this is called a RegEx pattern.  
+  
+  Some of the rules of the syntax are shown below. 
   
   One important thing to understand regarding RegEx is that it searches for the left to the right in a string of characters 
   looking for a match by comparing each letter of the string with the first character class of the pattern. 
+  
   If the first character matches the current character in the string, Regex considers this to be a potential
   match and so it then checks the next character in the string with the second character of the pattern and so on until
-  it either matches the entire pattern (confirmed match) or it fails to match the whole pattern. If it fails to match the 
-  entire pattern RegEx backtracks to the second letter of the potential match and begins again to match this character 
-  with the first letter of the pattern (starting the search process again
+  it either matches the entire pattern (confirmed match) or it fails to match the whole pattern. 
+  
+  If it fails to match the entire pattern, RegEx backtracks to the letter after the potential match and begins again to 
+  match this character with the first letter of the pattern (starting the search process again from this next letter)
 </p>
 
 # Example of RegEx in operation
