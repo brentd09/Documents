@@ -36,14 +36,14 @@
 #### Regex pattern = conv
 
 #### The string that is being matched = The critically concerned canary chirped loudly as it was conveyed into the mine shaft
-<br><br><br>
+<br>
 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 |c| | | | | | | | | | | | | | | | | | | | | | | | | | | 
 
-### c (from conv) does not match T so regex tries the next character
+### c (from the pattern conv) does not match T so regex tries the next character
 
 <br>
 
