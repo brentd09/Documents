@@ -258,7 +258,7 @@ These do not match any data, they are in fact to dictate where the match should 
 ### Quantifiers — * + ? and {}
 These multiply the previous RegEx character or character group by 0 or 1 or More depending on which quantifier was used in the RegEx pattern.
 
-|RegEx|Explanation|
+|RegEx Pattern|Explanation|
 |---|---|
 |xyz*       | matches a string that has "xy" followed by zero or more "z" e.g. xy or xyz or xyzz or xyzzz etc.|
 |xyz+       | matches a string that has "xy" followed by one or more "z" e.g. xyz or xyzz or xyzzz etc. but not xy|
