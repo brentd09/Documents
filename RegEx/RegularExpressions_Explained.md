@@ -166,7 +166,9 @@
 
 ### c does not match o so regex will try the next character and so on.
 
-### Now we will look at this process further in the string
+---
+
+### Now we will look at this process further along the string
 
 | | | | | | | | | | | | | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
