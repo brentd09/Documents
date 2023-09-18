@@ -31,47 +31,6 @@
   match this character with the first letter of the pattern (starting the search process again from this next letter)
 </p>
 
-# Example of RegEx in operation
-
-- Given a regex pattern of **conv** and a string to match like this
-  - **The critically concerned canary chirped loudly as it was conveyed into the mine shaft**  
-
-<p>
-<strong>String:</strong>  The critically concerned canary chirped loudly as it was conveyed into the mine shaft
-<strong>Pattern:</strong> conv
-</p>
-
-- The first letter of the pattern **c**onv is checked against the first letter in the string for a match
-  - **T**he critically concerned canary chirped loudly as it was conveyed into the mine shaft
-  - **c**
-- **T** does not match **c**, so RegEx shifts it focus to the next letter and starts the matching process again
- 
-
-  
-
-
-<br>
-
-# Interesting RegEx Patterns
-
-<BR>
-
-
-### Match a valid IP Address from 1.1.1.1 to 223.255.255.255 (Class A - Class C, Valid Addresses)
-
-```
-^([1-9]|[1-9][0-9]|1[01][0-9]|12[0-6]|12[89]|1[3-9][0-9]|2[0-2][0-3])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$
-```
-
-### Match an IP Address from Class C only
-
-```
-^(19[2-9]|2[0-2][0-3])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$
-```
-<br>
-
-
-
 ## This demonstration shows how regex works for standard matching
 
 #### Regex pattern = conv
@@ -244,6 +203,31 @@
 
 
 <br>
+
+
+<br>
+
+# Interesting RegEx Patterns
+
+<BR>
+
+
+### Match a valid IP Address from 1.1.1.1 to 223.255.255.255 (Class A - Class C, Valid Addresses)
+
+```
+^([1-9]|[1-9][0-9]|1[01][0-9]|12[0-6]|12[89]|1[3-9][0-9]|2[0-2][0-3])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$
+```
+
+### Match an IP Address from Class C only
+
+```
+^(19[2-9]|2[0-2][0-3])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$
+```
+<br>
+
+
+
+
 
 
 # RegEx Syntax
