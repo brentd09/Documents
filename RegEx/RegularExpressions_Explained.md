@@ -35,13 +35,15 @@
 
 - Given a regex pattern of **conv** and a string to match like this
   - **The critically concerned canary chirped loudly as it was conveyed into the mine shaft**  
+
 <p>
-**String:**  The critically concerned canary chirped loudly as it was conveyed into the mine shaft
-**Pattern:** conv
+<strong>String:</strong>  The critically concerned canary chirped loudly as it was conveyed into the mine shaft
+<strong>Pattern:</strong> conv
 </p>
+
 - The first letter of the pattern **c**onv is checked against the first letter in the string for a match
-**T**he critically concerned canary chirped loudly as it was conveyed into the mine shaft
-**c**
+  - **T**he critically concerned canary chirped loudly as it was conveyed into the mine shaft
+  - **c**
 - **T** does not match **c**, so RegEx shifts it focus to the next letter and starts the matching process again
  
 
