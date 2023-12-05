@@ -1,5 +1,7 @@
 # Google Search Tips
 
+## These keywords and constructs help locate what we are looking for faster in google
+
 |Keyword|Example|Description|
 |---|---|---|
 |""|"cat"|Looking for an exact match|
@@ -12,5 +14,5 @@
 |OR|cricket OR football|Search for football or cricket|
 |AFTER:|AFTER:2019|Seach for sites published after 2019|
 |BEFORE:|BEFORE:1999|search for site published before 1999|
-|related:|related:google.com.au|Search for sites that are similar to google.com.au|
-|cache:|cache:www.starwars.com|Search in google's cached content|
+
+
