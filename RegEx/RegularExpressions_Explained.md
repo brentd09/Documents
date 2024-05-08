@@ -253,7 +253,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 
 ### If we are using a Global search the matching process now starts to the right of the entire confirmed match
 
-| | | | | | | | | | | | | | | | | | | | | | | | | | | |
+| | | | | | | | | | | | | | |>| | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |a|s| |i|t| |w|a|s| |c|o|n|v|e|y|e|d| |i|n|t|o| |t|h|e|
 | | | | | | | | | | | | | | |c| | | | | | | | | | | | |
