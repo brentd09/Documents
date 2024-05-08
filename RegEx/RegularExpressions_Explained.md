@@ -50,7 +50,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |**Quantifiers**||
 |*|Matches 0 or more occurrences of the previous character class|
 |+|Matches 1 or more occurrences of the previous character class|
-|?|Matches 0 or 1 occurrences of the previous character class|
+|?|Matches 0 or 1 occurrence of the previous character class|
 |{3}|Matches 3 occurrences of the previous character class|
 |{3,6}|Matches 3, 4, 5 or 6 occurrences of the previous character class|
 |{4,}|Matches 4 or more occurrences of the previous character class|
