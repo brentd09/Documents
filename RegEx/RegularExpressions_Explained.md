@@ -48,12 +48,12 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |(\w\w\w)|Matches and captures three word characters|
 |(dog\|cat)|Matches and captures the word dog or cat|
 |**Quantifiers**||
-|*|Matches 0 or more of the previous character class|
-|+|Matches 1 or more of the previous character class|
-|?|Matches 0 or 1 of the previous character class|
-|{3}|Matches 3 of the previous character class|
-|{3,6}|Matches 3, 4, 5 or 6 of the previous character class|
-|{4,}|Matches 4 or more of the previous character class|
+|*|Matches 0 or more occurrences of the previous character class|
+|+|Matches 1 or more occurrences of the previous character class|
+|?|Matches 0 or 1 occurrences of the previous character class|
+|{3}|Matches 3 occurrences of the previous character class|
+|{3,6}|Matches 3, 4, 5 or 6 occurrences of the previous character class|
+|{4,}|Matches 4 or more occurrences of the previous character class|
 |**Escaping**||
 |\\.|This removes the special meaning of this RegEx symbol and treats it as a literal .|
 
