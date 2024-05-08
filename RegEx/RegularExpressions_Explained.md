@@ -161,7 +161,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 
 ---
 
-## Lets fast forward a little to the word concerned
+## Lets fast forward >> a little to the word concerned
 
 ### Later, when testing the word 'concerned'
 
@@ -217,7 +217,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 
 ---
 
-### Lets fastforward >>> this process and pick it up again when regex meets the word conveyed
+### Lets fastforward >> this process and pick it up again when regex meets the word conveyed
 
 | | | | | | | | | | |>| | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
