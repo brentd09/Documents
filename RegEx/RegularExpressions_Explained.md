@@ -172,7 +172,7 @@
 
 ---
 
-### Now we will look at this process further along the string
+### Lets fastforward >>> this process and pick it up again when regex meets the word conveyed
 
 | | | | | | | | | | |>| | | | | | | | | | | | | | | | |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -244,6 +244,36 @@
 Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match anywhere in a given string of characters, without anchors in the RegEx pattern the match could be at the start, at the end or even in the middle of the matching string.
 
 ## Basic topics
+
+|RegEx Symbols|RegEx Meaning|
+|---|---|
+|**Anchor**||
+|^|Start of string|
+|$|End of sring|
+|**Character Class**||
+|.|Matches any character that is not a line break|
+|\s|Matches one white-space character|
+|\S|Matches one non-whitespace character|
+|\d|Matches one Digit character|
+|\D|Matches one non-digit character|
+|\w|Matches one word character (Alphanumeric and _)|
+|\W|Matches one non-word character|
+|**Groups/Ranges**||
+|[a-f]|Matches one character matching a, b, c, d, e or f|
+|[fail]|Matches one Cahracter matching a, f, i or l|
+|[0-9-]|Matches one Character matching 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or -|
+|[^unix]|Matches any one character that is not i, n, u or x|
+|(\w\w\w)|Matches and captures three word characters|
+|(dog|cat)|Matches and captures the word dog or cat|
+|**Quantifiers**||
+|*|Matches 0 or more of the previous character class|
+|+|Matches 1 or more of the previous character class|
+|?|Matches 0 or 1 of the previous character class|
+|{3}|Matches 3 of the previous character class|
+|{3,6}|Matches 3, 4, 5 or 6 of the previous character class|
+|{4,}|Matches 4 or more of the previous character class|
+|**Escaping**||
+|\.|This removes the special meaning of this RegEx symbol and treats it as a literal .|
 
 ### Anchors — ^ and $
 These do not match any data, they are in fact to dictate where the match should be found
