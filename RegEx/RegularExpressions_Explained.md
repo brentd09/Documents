@@ -258,12 +258,11 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |a|s| |i|t| |w|a|s| |c|o|n|v|e|y|e|d| |i|n|t|o| |t|h|e|
 | | | | | | | | | | | | | | |c| | | | | | | | | | | | |
 
-### The matching process continues
-
----
+### The matching process continues.......
 
 <br>
 
+---
 
 <br>
 
