@@ -66,14 +66,17 @@ Each character in the RegEx pattern (string) matches one character unless it has
 - If the first character matches the current character in the string, Regex considers this to be a potential
   match and so it then checks the next character in the string with the second character of the pattern and so on until
   it either matches the entire pattern (confirmed match) or it fails to match the whole pattern. 
-- If it fails to match the entire pattern, RegEx backtracks to the letter after the potential match and begins again to 
-  match this character with the first letter of the pattern (starting the search process again from the it backtracked to)
+- If it fails to match the entire pattern, RegEx then backtracks to the character to the right of the first character where the
+  potential match occurred, it then restarts the matching process again using the first letter of the pattern seeking for potential matches.
 
 ### Matching process  
 
+- What follows is a presentation of the matching and backtracking process that occurrs in RegEx
+- This will use the RegEx pattern and character string as follows:
+
 #### Regex pattern = conv
 
-#### The string that is being matched = The critically concerned canary chirped loudly as it was conveyed into the mine shaft
+#### The string = The critically concerned canary chirped loudly as it was conveyed into the mine shaft
 <br>
 
 |> | | | | | | | | | | | | | | | | | | | | | | | | | | |
