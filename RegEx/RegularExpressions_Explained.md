@@ -252,6 +252,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 > **Because the entire pattern is matched this is considered a match**
 
 
+---
 
 <br>
 
