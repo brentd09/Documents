@@ -273,7 +273,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |{3,6}|Matches 3, 4, 5 or 6 of the previous character class|
 |{4,}|Matches 4 or more of the previous character class|
 |**Escaping**||
-|\.|This removes the special meaning of this RegEx symbol and treats it as a literal .|
+|\\.|This removes the special meaning of this RegEx symbol and treats it as a literal .|
 
 ### Anchors — ^ and $
 These do not match any data, they are in fact to dictate where the match should be found
