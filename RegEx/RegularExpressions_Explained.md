@@ -32,7 +32,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |^|Start of string|
 |$|End of sring|
 |**Character Class**||
-|dog|Matches the literal letters **dog** anywhere within the string|
+|dog|Matches the literal charcters **dog** anywhere within the string|
 |.|Matches any character that is not a line break|
 |\s|Matches one white-space character|
 |\S|Matches one non-whitespace character|
