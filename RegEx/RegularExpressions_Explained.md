@@ -21,7 +21,7 @@
   Some of the pattern syntax rules are shown below. 
 </p>
 
-# RegEx Syntax
+# RegEx Syntax (This list is not exhaustive, it is meant as an introduction)
 Each character in the RegEx pattern (string) matches one character unless it has a quantifier after it, quantifiers can be very specific or very general. RegEx patterns can match anywhere in a given string of characters, without anchors in the RegEx pattern the match could be at the start, at the end or even in the middle of the matching string.
 
 ## Basic topics
