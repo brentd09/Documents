@@ -15,8 +15,8 @@
 # What are Regular Expressions
 
 <p>
-  Regular Expression or RegEx for short is a system for searching, matching and modifying text. RegEx has syntax rules that 
-  describe what text to match and this is called a RegEx pattern.  
+  Regular Expression or RegEx for short is a system for searching, matching and potentially modifying text. RegEx has 
+  syntax rules that describe what text to match and this is called a RegEx pattern.  
   
   Some of the rules of the syntax are shown below. 
   
