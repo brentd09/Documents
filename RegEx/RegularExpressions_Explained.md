@@ -57,6 +57,8 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |**Escaping**||
 |\\.|This removes the special meaning of this RegEx symbol and treats it as a literal .|
 
+---
+
 ## This demonstration shows how regex works for standard matching
 
 - One important thing to understand regarding RegEx is that it searches for the left to the right in a string of characters 
