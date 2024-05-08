@@ -159,6 +159,10 @@ Each character in the RegEx pattern (string) matches one character unless it has
 
 <br>
 
+---
+
+## Lets fast forward a little to the word concerned
+
 ### Later, when testing the word 'concerned'
 
 
