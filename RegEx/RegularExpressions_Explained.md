@@ -264,7 +264,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |[0-9-]|Matches one Character matching 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or -|
 |[^unix]|Matches any one character that is not i, n, u or x|
 |(\w\w\w)|Matches and captures three word characters|
-|(dog|cat)|Matches and captures the word dog or cat|
+|(dog\|cat)|Matches and captures the word dog or cat|
 |**Quantifiers**||
 |*|Matches 0 or more of the previous character class|
 |+|Matches 1 or more of the previous character class|
