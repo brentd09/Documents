@@ -41,9 +41,9 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |\w|Matches one word character (alphanumeric and _)|
 |\W|Matches one non-word character|
 |**Groups/Ranges**||
-|[a-f]|Matches one character matching a, b, c, d, e or f|
-|[fail]|Matches one Cahracter matching a, f, i or l|
-|[0-9-]|Matches one Character matching 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or -|
+|[a-f]|Matches one character from a, b, c, d, e or f|
+|[fail]|Matches one character from a, f, i or l|
+|[0-9-]|Matches one character from 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 or -|
 |[^unix]|Matches any one character that is not i, n, u or x|
 |(\w\w\w)|Matches and captures three word characters|
 |(dog\|cat)|Matches and captures the word dog or cat|
