@@ -254,9 +254,9 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |.|Matches any character that is not a line break|
 |\s|Matches one white-space character|
 |\S|Matches one non-whitespace character|
-|\d|Matches one Digit character|
+|\d|Matches one digit character (0-9)|
 |\D|Matches one non-digit character|
-|\w|Matches one word character (Alphanumeric and _)|
+|\w|Matches one word character (alphanumeric and _)|
 |\W|Matches one non-word character|
 |**Groups/Ranges**||
 |[a-f]|Matches one character matching a, b, c, d, e or f|
