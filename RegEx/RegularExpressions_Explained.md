@@ -288,7 +288,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 ### Match a valid email address
 
 ```
-^[[a-zA-Z]([a-zA-Z0-9!#$&%'*+?=^_`{|.\/-]){1,62}@[a-zA-Z][a-zA-Z09]{1,62}(\.[a-zA-Z][a-zA-Z09]{1,62})+$
+^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
 ```
 
 
