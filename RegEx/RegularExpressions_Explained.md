@@ -67,7 +67,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 - If the first character matches the current character in the string, Regex considers this to be a potential
   match and so it then checks the next character in the string with the second character of the pattern and so on until
   it either matches the entire pattern (confirmed match) or it fails to match the whole pattern. 
-- If it fails to match the entire pattern, RegEx then backtracks to the character to the right of the first character where the
+- If it fails to match the entire pattern, RegEx then backs up to the character to the right of the first character where the
   potential match occurred, it then restarts the matching process again using the first letter of the pattern seeking for potential matches.
 
 ### Matching process  
@@ -203,7 +203,7 @@ Each character in the RegEx pattern (string) matches one character unless it has
 |T|h|e| |c|r|i|t|i|c|a|l|l|y| |c|o|n|c|e|r|n|e|d| |c|a|
 | | | | | | | | | | | | | | | |c|o|n|v| | | | | | | | |
 
-### conv from the pattern does not match conc from the string so regex backtracks 
+### conv from the pattern does not match conc from the string so regex backs up 
 ### to the letter o and starts the searching again from the start of the pattern
 
 
